@@ -64,7 +64,8 @@ def main():
     system = MultiAgentSystem()
     
     # Example usage
-    user_input = ''' Can you do a research about residual neural networks? how can they be applied and what are they? 
+    user_input = ''' Do a research about this website https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC 
+    and https://www.geeksforgeeks.org/residual-networks-resnet-deep-learning/
     '''
     system.run(user_input)
 

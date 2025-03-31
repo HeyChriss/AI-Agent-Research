@@ -25,7 +25,7 @@ def create_process_agent(power_llm):
 
     **Agent Guidelines:**
     - **Visualization Agent:** Develop and explain data visualizations that effectively communicate key findings.
-    - **Search Agent:** Collect and summarize relevant information, and compile a comprehensive list of references.
+    - **Search Agent:** Collect and summarize relevant information, and compile a comprehensive list of references, if the search limit has been reached byt the search agent, please do not ask for more search and work with what you have.
     - **Coder Agent:** Write and document efficient Python code for data analysis, ensuring that the code is clean and reproducible.
     - **Report Agent:** Draft, refine, and finalize the research report, integrating inputs from all agents and ensuring the narrative is clear and cohesive.
 

@@ -248,7 +248,7 @@ def refiner_node(state: State, agent: AgentExecutor, name: str) -> State:
         
         # Create refiner state
         refiner_state = state.copy()
-        refiner_state["messages"] = [BaseMessage(content=report_content)]
+        refiner_state["messages"] = [AIMessage(content=report_content, name="materials_agent")]
         
         try:
             # Attempt to invoke agent with full content
@@ -265,8 +265,11 @@ def refiner_node(state: State, agent: AgentExecutor, name: str) -> State:
             refiner_state["messages"] = [BaseMessage(content=simplified_report_content)]
             result = agent.invoke(refiner_state)
         
-        # Update original state
-        state["messages"].append(AIMessage(content=result))
+        # Extract output from result and ensure it's a string
+        output = result["output"] if isinstance(result, dict) and "output" in result else str(result)
+        
+        # Update original state with proper AIMessage
+        state["messages"].append(AIMessage(content=output, name=name))
         state["sender"] = name
         
         logger.info("Refiner node processing completed")
