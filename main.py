@@ -64,9 +64,7 @@ def main():
     system = MultiAgentSystem()
     
     # Example usage
-    user_input = ''' Do a research about this website https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC 
-    and https://www.geeksforgeeks.org/residual-networks-resnet-deep-learning/
-    '''
+    user_input = input("Enter your query: ")
     system.run(user_input)
 
 if __name__ == "__main__":

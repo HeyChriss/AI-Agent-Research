@@ -4,6 +4,7 @@ import pandas as pd
 from typing import Dict, Optional, Annotated, List
 from logger import setup_logger
 from load_cfg import WORKING_DIRECTORY
+from pydantic import BaseModel, Field
 
 # Set up logger
 logger = setup_logger()
@@ -131,10 +132,14 @@ def write_document(
         logger.error(f"Error while saving document: {str(e)}")
         return f"Error while saving document: {str(e)}"
 
-@tool
+class EditDocumentInput(BaseModel):
+    file_name: str = Field(description="Name of the file to edit")
+    inserts: Dict[int, str] = Field(description="Dictionary of line numbers and text to insert")
+
+@tool(args_schema=EditDocumentInput)
 def edit_document(
-    file_name: Annotated[str, "Name of the file to edit"],
-    inserts: Annotated[Dict[int, str], "Dictionary of line numbers and text to insert"]
+    file_name: str,
+    inserts: Dict[int, str]
 ) -> str:
     """
     Edit a document by inserting text at specific line numbers.
