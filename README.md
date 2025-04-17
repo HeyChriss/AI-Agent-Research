@@ -122,7 +122,7 @@ OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # LangChain API Key (optional)
 # Used for monitoring the processing
-LANGCHAIN_API_KEY=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
+LANGCHAIN_API_KEY=lsv2_pt_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 ### Installation Steps
