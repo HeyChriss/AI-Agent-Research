@@ -129,7 +129,7 @@ LANGCHAIN_API_KEY=lsv2_pt_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/AI-Agent-Research.git
+git clone https://github.com/HeyChriss/AI-Agent-Research.git
 cd AI-Agent-Research
 ```
 
@@ -168,6 +168,10 @@ WARNING: The agent system may modify the data being analyzed. It is highly recom
 ## Contributing
 
 Contributions are welcome! Please feel free to submit pull requests, particularly for known limitation areas.
+
+## Video Demostration
+
+Link of the presentation https://cdnapisec.kaltura.com/index.php/extwidget/preview/partner_id/1157612/uiconf_id/42438192/entry_id/1_k25h8fcq/embed/dynamic
 
 ## License
 
