@@ -1,4 +1,7 @@
-# AI Multi-Agent Research System
+# AI Multi-Agent Research System 
+
+
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=HeyChriss.AI-Agent-Research) <a href="https://www.linkedin.com/in/christianmijangos5454">![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a>
 
 A sophisticated multi-agent AI system designed to assist with research tasks using LangChain and various specialized tools. This system employs multiple AI agents working in concert to handle different aspects of the research process.
 ![System Architecture Diagram](assets/system-diagram.svg)
